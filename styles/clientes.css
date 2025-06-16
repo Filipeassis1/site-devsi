@@ -1,0 +1,45 @@
+.s-clients{
+    background-color: white;
+    padding: 4rem 0;
+    text-align: center;
+
+    .container{
+        overflow-x: hidden;
+    }
+
+    h4{
+        color: var(--dark-bg);
+        margin-bottom: 2rem;
+    }
+
+    .carrosell{
+        display: flex;
+        width: max-content;
+        gap: 2rem;
+        overflow-x: hidden;
+        animation: scroll 45s linear infinite;
+        
+
+        img{
+            filter: grayscale(100%);
+            width: 100%;
+            max-height: 5.188rem;
+            object-fit: contain;
+
+            &:hover{
+                filter: grayscale(0%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

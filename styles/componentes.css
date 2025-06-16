@@ -1,5 +1,6 @@
 .btn-menu{
     display: flex;  
+    font: var(--btn-font) !important;
     padding: .6rem;
     background-color: var(--blue-primary);
     font: var(--text-regular);
@@ -15,4 +16,28 @@
     }
 
 
+}
+
+.button-primary{
+
+    margin: 0 auto;
+    font: var(--btn-font);
+    background-color: var(--blue-primary);
+    border: none;
+    padding:0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 235px;
+    gap: 1rem;
+    cursor: pointer;
+
+    .arrow-btn{
+        width: 40px;
+    }
+
+    &:hover{
+        background-color: var(--blue-secondary);
+    }
 }

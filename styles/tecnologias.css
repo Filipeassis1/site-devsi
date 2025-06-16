@@ -1,0 +1,29 @@
+.tecnologias{
+
+    .container{
+        text-align: center;
+    }
+
+    padding: 5.563rem 0;
+
+    .text-top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        gap: 2rem;
+
+        p{
+            color: var(--gray-4);
+        }
+    }
+
+    .techs{
+        margin: 2.625rem 0;
+    }
+
+    .button-primary{
+
+        margin-top: 2.125rem;
+    }
+}
