@@ -1,0 +1,18 @@
+.btn-menu{
+    display: flex;  
+    padding: .6rem;
+    background-color: var(--blue-primary);
+    font: var(--text-regular);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    width: 158px;
+
+    &:hover{
+        background-color: var(--blue-secondary);
+        color: white !important;
+    }
+
+
+}

@@ -1,0 +1,16 @@
+:root{
+
+    --blue-primary: #38B6FF;
+    --blue-secondary: #05A3FF;
+    --yellow-primary:#FFDE59;
+    --dark-bg: #00131E;
+
+
+    --font-text: "Inter",sans-serif;
+    --text-regular: 400 1rem/150% var(--font-text);
+
+
+    --font-header: "IBM Plex Sans", sans-serif;
+    --h1: 700 3.25rem/150% var(--font-header);
+
+}

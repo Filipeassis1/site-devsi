@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+   
+    
+}
+
+body{
+    font: var(--text-regular);
+    background-color: var(--dark-bg);
+}
+
+a{
+    color: inherit;
+}
+
+img{
+    width: 100%;
+
+}
+
+
+h1{
+    font: var(--h1);
+}
+
