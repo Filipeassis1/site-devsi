@@ -1,0 +1,146 @@
+header {
+    img {
+        max-width: 4rem;
+        object-fit: contain;
+    }
+
+    #heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem 0;
+    }
+
+    #btn-mobile {
+        display: none;
+        background: none;
+        border: none;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    nav {
+        display: flex;
+
+        .dropdown {
+            position: relative;
+
+            .drop {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: rgba(56, 182, 255, 0.07);
+                backdrop-filter: blur(5.7px);
+                padding: 0 1rem;
+                min-width: 12.5rem;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                display: none;
+                border-radius: 8px;
+
+                li {
+                    font-size: 0.875rem;
+                    margin-top: 1rem;
+
+                    &:last-child {
+                        margin-bottom: 1rem;
+                    }
+
+                    a {
+                        &:hover {
+                            color: $yellow-primary;
+                        }
+                    }
+                }
+            }
+
+            &:hover .drop {
+                display: block;
+            }
+        }
+
+        #menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            &:hover {
+                a {
+                    &:hover:not(.btn-primary) {
+                        color: $yellow-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Responsividade */
+    @media (max-width: 760px) {
+
+
+        #heading{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .dropdown:hover .drop{
+            
+            display: none !important;
+        }
+
+        .dropdown.open .drop{
+            display: block !important;
+            position: static;
+            width: 100%;
+            background-color: $dark-bg
+
+        }
+
+    
+
+
+        #btn-mobile {
+            display: flex;
+            justify-content: flex-end;
+        }
+        // #heading{
+        //     display: flex;s
+        //     justify-content: space-between;
+           
+        // }
+
+        #nav {
+            display: none;
+            width: 100%;
+            background-color: $dark-bg;
+            justify-content: flex-start;
+        }
+
+        #nav.active {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            top: 108px;
+
+            #menu{
+                display: flex;
+                width: 100%;
+                margin-top: 22px;
+                flex-direction: column;
+                align-items: flex-start;
+
+                li{
+                    padding: 1rem 0;
+                    width: 100%;
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.295)
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.conheca{
+    padding: 5.563rem 0;
+ 
+
+    .container{
+        display: flex;  
+        justify-content: space-between;
+
+        
+
+    }
+
+    .sobreDevsi{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+
+        
+        p{
+            font-size:0.875rem;
+            color: $gray-3;
+        }
+    }
+
+
+    @media  (max-width: 750px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sobreDevsi {
+            margin-bottom: 22px;
+            align-items: center;
+            display: flex; // Garante que continua flex
+            flex-direction: column; // Garante a direção
+            margin-right: 0; // Remove o margin-right: auto do desktop
+            width: 100%; // Opcional: faz ocupar toda a largura do container
+            justify-content: center; // Opcional: centraliza verticalmente se necessário
+        }
+    }
+}
