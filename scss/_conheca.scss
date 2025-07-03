@@ -15,6 +15,10 @@
         flex-direction: column;
         margin-right: auto;
 
+        h2{
+            margin-bottom: 1rem;
+        }
+
         
         p{
             font-size:0.875rem;
@@ -28,6 +32,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
         }
 
         .sobreDevsi {
@@ -38,6 +43,10 @@
             margin-right: 0; // Remove o margin-right: auto do desktop
             width: 100%; // Opcional: faz ocupar toda a largura do container
             justify-content: center; // Opcional: centraliza verticalmente se necessário
+
+            h2{
+                margin-bottom: 1rem;
+            }
         }
     }
 }

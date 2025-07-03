@@ -27,8 +27,8 @@
         .sTitle{
             
             position: absolute;
-            top: 35px;
-            left: 340px;
+            top: 36px;
+            left: 350px;
             max-width: 2rem;
         }
         
@@ -90,10 +90,25 @@
                     max-width: 22px;
                     position: absolute;
                     top: 26px;
-                    left: 350px;
                 }
             }
         }
+    }
+
+
+    @media(max-width: 390px){
+
+        .container{
+            position: relative;
+
+            .sTitle{
+                max-width: 22px;
+                position: absolute;
+                left: 290px;
+        }
+        }
+    
+
     }
 
 

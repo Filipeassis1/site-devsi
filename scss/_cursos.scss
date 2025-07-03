@@ -23,10 +23,17 @@
         flex-direction: column;
         max-width: 27.875rem;
         gap: 2rem;
+
+        .img-mobile{
+            display: none;
+        }
+    
         
         .button-primary {
             margin: 0;
         }
+
+
     }
 
     .right{
@@ -35,8 +42,11 @@
     }
 
 
+    
 
-    @media  (max-width: 850px){
+
+
+    @media  (max-width: 750px){
         .container{
             display: flex;
             flex-direction: column;
@@ -49,7 +59,15 @@
             text-align: center;
             align-items: center;
 
+            .img-mobile{
+                display: block;
+            }
 
+
+        }
+
+        .right{
+            display: none;
         }
     }
 }

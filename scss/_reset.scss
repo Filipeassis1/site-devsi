@@ -35,3 +35,16 @@ h2{
     font: $h2;
 }
 
+
+@media (max-width: 760px){
+
+    h1{
+        font: $h1-mobile;
+    }
+
+    h2{
+        font: $h2-mobile;
+    }
+
+    
+}
